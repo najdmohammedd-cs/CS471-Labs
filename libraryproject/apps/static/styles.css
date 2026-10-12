@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Georgia&display=swap');
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #faf6f0;
+  color: #3e3a34;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* شريط التنقل */
+.topnav {
+  background-color: #2d2a26;
+  width: 100%;
+  padding: 16px 30px;
+  box-sizing: border-box;
+}
+
+.topnav a {
+  color: #e8dfd0;
+  text-align: center;
+  margin-right: 28px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.topnav a:hover {
+  color: #c17f59;
+}
+
+.topnav a.active {
+  color: #c17f59;
+  border-bottom: 2px solid #c17f59;
+  padding-bottom: 4px;
+}
+
+/* العناوين */
+h1 {
+  font-family: Georgia, serif;
+  color: #4a4038;
+  padding: 20px 30px 0 30px;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  color: #6b5b4b;
+}
+
+p {
+  padding: 0 30px;
+  max-width: 700px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e3d9c8;
+  margin: 10px 30px;
+}
+
+a {
+  color: #8a6a4e;
+}
+
+/* شبكة بطاقات الكتب */
+.books-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 10px 30px 40px 30px;
+}
+
+.book-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  padding: 16px;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  color: #3e3a34;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.book-card img {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 12px;
+}
+
+.book-card h2 {
+  font-size: 16px;
+  margin: 6px 0 0 0;
+}
+
+/* صفحة تفاصيل كتاب */
+.book-detail img {
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+  margin: 20px 30px;
+  max-width: 220px;
+}

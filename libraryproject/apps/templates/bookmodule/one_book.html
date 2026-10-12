@@ -1,0 +1,12 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} Show one Book {% endblock title %}
+
+{% block content %}
+  <a href="{% url "books.list_books" %}">⬅ Go Back</a>
+  <h1>فن اللامبالاة: لعيش حياة تخالف المألوف</h1>
+  <h2>Author: مارك مانسون</h2>
+  <p><strong>فن اللامبالاة</strong> كتاب تطوير ذات يتحدى الفكرة الشائعة بضرورة التفكير الإيجابي الدائم، ويدعو بدلاً من ذلك للتركيز على ما يستحق فعلاً اهتمامك، وتقبّل حدود قدرتك على التحكم بكل شيء.</p>
+  <img src="{% static 'book1.jpg' %}" alt="فن اللامبالاة">
+{% endblock content %}

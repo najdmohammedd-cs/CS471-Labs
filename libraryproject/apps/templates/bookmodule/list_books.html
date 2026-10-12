@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} List of Books {% endblock title %}
+
+{% block stylesheets %}
+<style>
+  h1 { color: #4a4038; }
+  h2 { color: #6b5b4b; }
+  p { font-family: 'Segoe UI', sans-serif; font-size: 16px; }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+  <h1>📖 List of Books</h1>
+  <div class="books-grid">
+    <a href="{% url "books.view_one_book" 123 %}" class="book-card">
+      <img src="{% static 'book1.jpg' %}" alt="فن اللامبالاة">
+      <h2>فن اللامبالاة</h2>
+    </a>
+    <a href="{% url "books.view_one_book" 456 %}" class="book-card">
+      <img src="{% static 'book2.jpg' %}" alt="إعادة برمجة جهازك العصبي">
+      <h2>إعادة برمجة جهازك العصبي</h2>
+    </a>
+    <a href="{% url "books.view_one_book" 789 %}" class="book-card">
+      <img src="{% static 'book3.jpg' %}" alt="شجرتي">
+      <h2>شجرتي: شجرة البرتقال الرائعة</h2>
+    </a>
+  </div>
+{% endblock content %}
