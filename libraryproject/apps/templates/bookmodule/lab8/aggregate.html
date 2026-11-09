@@ -1,0 +1,17 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} Book Statistics {% endblock title %}
+
+{% block content %}
+<div style="padding: 20px;">
+    <h2>Task 5: Book Statistics</h2>
+    <table border="1" cellpadding="8">
+        <tr><td>Number of books</td><td>{{ stats.total_books }}</td></tr>
+        <tr><td>Total price</td><td>{{ stats.total_price }}</td></tr>
+        <tr><td>Average price</td><td>{{ stats.avg_price|floatformat:2 }}</td></tr>
+        <tr><td>Maximum price</td><td>{{ stats.max_price }}</td></tr>
+        <tr><td>Minimum price</td><td>{{ stats.min_price }}</td></tr>
+    </table>
+</div>
+{% endblock content %}

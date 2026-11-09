@@ -1,0 +1,19 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} Students per City {% endblock title %}
+
+{% block content %}
+<div style="padding: 20px;">
+    <h2>Task 7: Number of students in each city</h2>
+    <table border="1" cellpadding="8">
+        <tr><th>City</th><th>Number of students</th></tr>
+        {% for c in cities %}
+        <tr>
+            <td>{{ c.city }}</td>
+            <td>{{ c.student_count }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock content %}
